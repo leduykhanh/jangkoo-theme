@@ -6,6 +6,7 @@
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 function theme_enqueue_styles() {
     wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
+    wp_enqueue_style( 'style_end', get_template_directory_uri() . '/style_end.css' );
     wp_enqueue_style( 'child-style',
         get_stylesheet_directory_uri() . '/style.css',
         array('parent-style')
@@ -20,3 +21,4 @@ function theme_enqueue_styles() {
 wp_enqueue_script( 'script', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js',array( 'jquery' ));
 wp_enqueue_script( 'bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js',array( 'jquery' ));
 wp_enqueue_script( 'leaderboard' );
+	
