@@ -14,7 +14,7 @@ a:hover {
 input, textarea, select, input[type="submit"], input[type="button"], button, .button { font-family: 'Josefin Sans', sans-serif; vertical-align: middle; }
 
 /* Navigation */
-header nav { width: 75%; float: right; position: relative; top: 1em; z-index: 200; }
+header nav { width: 75%; float: right; position: relative; z-index: 200; }
 header nav ul { float: right; text-align: right; margin: 0; padding: 0; }
 header nav ul li { display: inline-block; margin: 0 1em; }
 header nav ul li a { display: block; color: #222; font-size: 1.05em; padding: 0 0 1em 0; text-decoration: none; position: relative; z-index: 5; }
